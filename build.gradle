@@ -82,6 +82,8 @@ subprojects {
             officialMojangMappings()
             parchment("org.parchmentmc.data:parchment-${parchment_version}@zip")
         }
+
+        compileOnly files('./exposure.jar') // what am i doing chatgpt
     }
 
     java {
